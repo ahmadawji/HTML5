@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Template</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="educate.html">Educate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1> Educate </h1>
+    <section>
+
+        <p class="center">HTML5 is a markup language used for structuring and presenting content on the World Wide Web.
+            It is the fifth and latest major version of HTML that is a World Wide Web Consortium recommendation. Its
+            goals were to improve the language with support for the latest multimedia and other new features.
+
+        </p>
+    </section>
+
+
+    <img src="images/html.jpg" height="600px" width="100%">
+
+    <div id="main">
+        <h1> Lets learn together </h1>
+        <header></header>
+        <nav></nav>
+        <article></article>
+        <aside></aside>
+        <footer></footer>
+    </div>
+
+    <!-- <img src="images/pinkbg.jpg" height="300px" width="100%"> -->
+    <img src="images/html5.gif" height="500px" width="100%">
+
+    <section>
+        <p class="title"> Canvas</p>
+        <p class="center">The HTML canvas element is used to draw graphics, on the fly, via JavaScript. The canvas
+            element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+            Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+        </p>
+    </section>
+
+
+
+    <canvas width="500" height="400" id="canvas"></canvas>
+    <canvas width="500" height="400" id="canvas1"></canvas>
+    <canvas width="500" height="400" id="canvas2"></canvas>
+
+    <img src="images/htmlbg.jpg" height="500px" width="100%">
+
+    <section class="center">
+        <p class="title"> HTML5 new elements</p>
+        <p>The State of HTML5,” what we really
+            mean is: which new features can we reliably use without destroying
+            our web applications in older browsers that don’t adequately
+            support HTML5? Alternatively, which features, generally referred to
+            as “edge features,” aren’t quite ready for everyday usage?
+        </p>
+        <label>Color:</label>
+        <input type="color"><br>
+        <label>File:</label>
+        <input type="file"><br>
+        <label>Date:</label>
+        <input type="date"><br>
+        <label>Progress:</label>
+        <progress min=0 max=100 value=60></progress><br>
+        <label>Meter:</label>
+        <meter min=0 max=100 value=60></meter>
+
+    </section>
+
+
+    <footer>
+        <span>HTML5 template by Lamees</span>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    (function () {
+        var canvas = document.getElementById('canvas'),
+            context = canvas.getContext('2d'),
+            bg;
+
+        context.strokeStyle = "#666";
+
+        bg = context.createLinearGradient(200, 150, 200, 300);
+        bg.addColorStop(0, "#ccffff");
+        bg.addColorStop(.5, "#ff9999");
+        bg.addColorStop(1, "#ffe6e6");
+        context.fillStyle = bg;
+
+
+
+        context.lineWidth = 5.0;
+
+        context.beginPath();
+        context.moveTo(100, 300);
+        context.lineTo(300, 300);
+        context.lineTo(200, 150);
+        context.closePath();
+
+        context.fill();
+        context.stroke();
+    })();
+
+    var canvas = document.getElementById('canvas1'),
+        ctx = canvas.getContext('2d');
+
+
+    ctx.arc(200, // x coord
+        200, // y coord
+        100, // radius (or 1/2 the width and height)
+        0, // begin point on circle
+        Math.PI * 2, // end point
+        true // clockwise or anticlockwise
+    );
+    ctx.fill();
+
+    (function () {
+        var canvas = document.getElementById('canvas2'),
+            context = canvas.getContext('2d'),
+            bg;
+
+        context.strokeStyle = "#666";
+
+        bg = context.createLinearGradient(200, 150, 200, 300);
+        bg.addColorStop(0, "#ccffff");
+        bg.addColorStop(.5, "#00e6e6");
+        bg.addColorStop(1, "#ffe6e6");
+        context.fillStyle = bg;
+
+
+
+        context.lineWidth = 5.0;
+
+        context.beginPath();
+        context.moveTo(100, 300);
+        context.lineTo(300, 300);
+        context.lineTo(200, 200);
+        context.closePath();
+
+        context.fill();
+        context.stroke();
+    })();
+</script>

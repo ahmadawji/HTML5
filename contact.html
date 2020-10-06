@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<body id="contact">
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="educate.html">Educate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1> Contact Us </h1>
+
+    <div id="map"></div>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCk-sclQU-Fj4T9EHZcW5RJ4_EUXhj2g-I"></script>
+
+    <!-- <section style="text-align: center; margin-top: 30%;padding-bottom: 20px;">
+        <label>Name: </label>
+        <input type="text" required><br>
+
+        <label>Email: </label>
+        <input type="email"><br>
+        <input type="submit" primary>
+    </section> -->
+
+    <div class="f-body">
+
+        <div id="f-form">
+            <h3 class="center">Contact us</h3>
+
+            <form id="f-form-id" class="f-form-class">
+
+                <div class="f-form-group">
+                    <label for="Name" class="f-label">Your name</label>
+                    <div class="f-input-group">
+                        <input type="text" id="Name" name="Name" class="f-form-control" required>
+                    </div>
+                </div>
+
+                <div class="f-form-group">
+                    <label for="Email" class="f-label">Your email address</label>
+                    <div class="f-input-group">
+                        <input type="email" id="Email" name="Email" class="f-form-control" required>
+                    </div>
+                </div>
+
+                <div class="f-form-group">
+                    <label for="Message" class="f-label">Your message</label>
+                    <div class="f-input-group">
+                        <textarea id="Message" name="Message" class="f-form-control" rows="6" maxlength="3000"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="f-form-group">
+                    <button type="submit" id="f-button" class="f-btn f-btn-lg f-btn-block">Send
+                        Message</button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <span>HTML5 template by Lamees</span>
+    </footer>
+</body>
+
+</html>

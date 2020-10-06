@@ -1,0 +1,324 @@
+html,
+body,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header.....................*/
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h1,
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Nav */
+
+nav a {
+  font-size: 20px;
+  letter-spacing: 2%;
+  text-decoration: none;
+  color: #36183d;
+  text-align: center;
+  margin-right: 15%;
+}
+
+nav a:hover {
+  color: #110807;
+  font-weight: bolder;
+}
+
+nav li {
+  display: inline;
+  align-content: right;
+}
+
+nav ul {
+  margin-left: 45%;
+}
+
+nav {
+  float: right;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 167, 206),
+    rgba(100, 90, 100, 0.733)
+  );
+  margin-bottom: 4%;
+}
+
+/*Video*/
+video {
+  width: 100%;
+  height: 500px;
+}
+
+/*article*/
+
+article {
+  text-align: center;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+}
+.center {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5%;
+  font-size: 23px;
+}
+
+details summary::-webkit-details-marker {
+  color: rgb(116, 48, 89);
+  font-size: 20px;
+}
+
+/*Footer.......................*/
+
+footer {
+  background-color: #333;
+  height: 40px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+footer span {
+  color: white;
+}
+
+/*Contact Page..................................................................*/
+
+#map {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  position: absolute;
+}
+
+#f-form {
+  display: block;
+}
+
+.f-body {
+  margin: auto;
+  margin-top: 40%;
+  margin-bottom: 10%;
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  width: 50%;
+}
+
+.f-form-group {
+  margin-bottom: 1rem;
+}
+
+.f-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.f-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.f-form-control:focus {
+  border: 1px solid #313131;
+}
+
+select.f-form-control[size],
+select.f-form-control[multiple] {
+  height: auto;
+}
+
+textarea.f-form-control {
+  font-family: -apple-system, Arial, sans-serif;
+  height: auto;
+}
+
+label.f-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.f-credit {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #545b62;
+}
+
+.f-credit a {
+  color: #545b62;
+  text-decoration: underline;
+}
+
+.f-credit a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.f-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #070808;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: rgb(126, 73, 104);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .f-btn {
+    transition: none;
+  }
+}
+
+.f-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.f-btn:focus,
+.f-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.f-btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.f-btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.f-btn-primary:focus,
+.f-btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.f-btn-lg,
+.f-btn-group-lg > .fcf-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.f-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.f-btn-block + .f-btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block,
+input[type="reset"].fcf-btn-block,
+input[type="button"].fcf-btn-block {
+  width: 100%;
+}
+
+/*Educate Page..................................................................*/
+#main {
+  width: 30%;
+  height: 300px;
+  margin-left: 35%;
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+#main header {
+  width: 100%;
+  height: 30px;
+  background-color: #ffe6e6;
+  border-radius: 25px;
+  margin: 2% 0 2% 0;
+}
+#main nav {
+  width: 35%;
+  height: 200px;
+  background-color: #ff9999;
+  border-radius: 25px;
+  margin: 2% 0 2% 2%;
+}
+#main article {
+  width: 60%;
+  height: 100px;
+  background-color: #ccffff;
+  border-radius: 25px;
+  margin: 2% 0 2% 0;
+}
+#main aside {
+  width: 60%;
+  height: 100px;
+  background-color: #00e6e6;
+  border-radius: 25px;
+  margin: 2% 0 2% 0;
+}
+#main footer {
+  width: 100%;
+  height: 30px;
+  background-color: #ffcccc;
+  border-radius: 25px;
+  margin: 2% 0 2% 0;
+}
